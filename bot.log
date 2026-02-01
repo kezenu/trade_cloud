@@ -1,0 +1,129 @@
+2026-02-01 23:21:52,832 - INFO - ============================================================
+2026-02-01 23:21:52,832 - INFO - PRODUCTION-GRADE ML TRADING BOT STARTING
+2026-02-01 23:21:52,832 - INFO - ============================================================
+2026-02-01 23:21:52,832 - INFO - Connecting to MetaTrader 5...
+2026-02-01 23:21:52,841 - INFO - Connected successfully
+2026-02-01 23:21:52,842 - INFO - Account: 52718750, Server: ICMarketsSC-Demo
+2026-02-01 23:21:52,842 - INFO - Balance: $200.00, Equity: $200.00
+2026-02-01 23:21:52,845 - INFO - Trade journal initialized
+2026-02-01 23:21:52,846 - INFO - Loading ML models...
+2026-02-01 23:21:53,929 - INFO - Using optimal thresholds - BUY: 0.015, SELL: 0.111
+2026-02-01 23:21:53,930 - INFO - State reset for 2026-02-01
+2026-02-01 23:21:53,932 - INFO - Initial balance: $200.00
+2026-02-01 23:21:53,933 - INFO - Peak balance: $200.00
+2026-02-01 23:21:53,933 - INFO - ============================================================
+2026-02-01 23:21:53,933 - INFO - BOT RUNNING - Press Ctrl+C to stop
+2026-02-01 23:21:53,933 - INFO - ============================================================
+2026-02-01 23:24:20,537 - INFO - Bot stopped by user
+2026-02-01 23:24:20,537 - INFO - Closing all open positions...
+2026-02-01 23:24:20,538 - INFO - Bot shutdown complete
+2026-02-01 23:37:02,520 - INFO - ============================================================
+2026-02-01 23:37:02,520 - INFO - PRODUCTION-GRADE ML TRADING BOT STARTING
+2026-02-01 23:37:02,521 - INFO - ============================================================
+2026-02-01 23:37:02,521 - INFO - Connecting to MetaTrader 5...
+2026-02-01 23:37:02,529 - INFO - Connected successfully
+2026-02-01 23:37:02,529 - INFO - Account: 52718750, Server: ICMarketsSC-Demo
+2026-02-01 23:37:02,530 - INFO - Balance: $200.00, Equity: $200.00
+2026-02-01 23:37:02,530 - INFO - Loading ML models...
+2026-02-01 23:37:03,733 - INFO - Using optimal thresholds - BUY: 0.137, SELL: 0.130
+2026-02-01 23:37:03,738 - INFO - State reset for 2026-02-01
+2026-02-01 23:37:03,738 - INFO - Initial balance: $200.00
+2026-02-01 23:37:03,739 - INFO - Peak balance: $200.00
+2026-02-01 23:37:03,739 - INFO - ============================================================
+2026-02-01 23:37:03,740 - INFO - BOT RUNNING - Press Ctrl+C to stop
+2026-02-01 23:37:03,740 - INFO - ============================================================
+2026-02-01 23:37:03,982 - INFO - Prediction - BUY: 0.718, SELL: 0.165
+2026-02-01 23:37:03,982 - INFO - BUY signal detected (confidence: 0.718)
+2026-02-01 23:37:03,999 - WARNING - Insufficient margin. Required: $1000.00, Available: $200.00
+2026-02-01 23:37:03,999 - INFO - Sending BUY order: 0.01 @ 1.18536, SL: 1.18201, TP: 1.19205
+2026-02-01 23:37:03,999 - ERROR - Order failed: 10027 - AutoTrading disabled by client
+2026-02-01 23:37:34,091 - INFO - Prediction - BUY: 0.718, SELL: 0.165
+2026-02-01 23:37:34,092 - INFO - BUY signal detected (confidence: 0.718)
+2026-02-01 23:37:34,110 - WARNING - Insufficient margin. Required: $1000.00, Available: $200.00
+2026-02-01 23:37:34,111 - INFO - Sending BUY order: 0.01 @ 1.18536, SL: 1.18201, TP: 1.19205
+2026-02-01 23:37:34,111 - ERROR - Order failed: 10027 - AutoTrading disabled by client
+2026-02-01 23:37:48,520 - INFO - Bot stopped by user
+2026-02-01 23:37:48,520 - INFO - Closing all open positions...
+2026-02-01 23:37:48,521 - INFO - Bot shutdown complete
+2026-02-01 23:38:41,123 - INFO - ============================================================
+2026-02-01 23:38:41,123 - INFO - PRODUCTION-GRADE ML TRADING BOT STARTING
+2026-02-01 23:38:41,124 - INFO - ============================================================
+2026-02-01 23:38:41,124 - INFO - Connecting to MetaTrader 5...
+2026-02-01 23:38:41,134 - INFO - Connected successfully
+2026-02-01 23:38:41,134 - INFO - Account: 52718750, Server: ICMarketsSC-Demo
+2026-02-01 23:38:41,134 - INFO - Balance: $1200.00, Equity: $1200.00
+2026-02-01 23:38:41,134 - INFO - Loading ML models...
+2026-02-01 23:38:42,199 - INFO - Using optimal thresholds - BUY: 0.137, SELL: 0.130
+2026-02-01 23:38:42,199 - INFO - State reset for 2026-02-01
+2026-02-01 23:38:42,199 - INFO - Initial balance: $1200.00
+2026-02-01 23:38:42,199 - INFO - Peak balance: $1200.00
+2026-02-01 23:38:42,200 - INFO - ============================================================
+2026-02-01 23:38:42,200 - INFO - BOT RUNNING - Press Ctrl+C to stop
+2026-02-01 23:38:42,200 - INFO - ============================================================
+2026-02-01 23:38:42,589 - INFO - Prediction - BUY: 0.410, SELL: 0.162
+2026-02-01 23:38:42,589 - INFO - BUY signal detected (confidence: 0.410)
+2026-02-01 23:38:42,606 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:38:42,606 - INFO - Sending BUY order: 0.01 @ 4885.58000, SL: 4727.68050, TP: 5201.37900
+2026-02-01 23:38:42,606 - ERROR - Order failed: 10027 - AutoTrading disabled by client
+2026-02-01 23:39:12,607 - WARNING - Trading stopped: Max drawdown reached (100.0%)
+2026-02-01 23:39:15,648 - INFO - Bot stopped by user
+2026-02-01 23:39:15,649 - INFO - Closing all open positions...
+2026-02-01 23:39:15,649 - INFO - Bot shutdown complete
+2026-02-01 23:43:31,965 - INFO - ============================================================
+2026-02-01 23:43:31,965 - INFO - PRODUCTION-GRADE ML TRADING BOT STARTING
+2026-02-01 23:43:31,966 - INFO - ============================================================
+2026-02-01 23:43:31,966 - INFO - Connecting to MetaTrader 5...
+2026-02-01 23:43:31,976 - INFO - Connected successfully
+2026-02-01 23:43:31,977 - INFO - Account: 52718750, Server: ICMarketsSC-Demo
+2026-02-01 23:43:31,977 - INFO - Balance: $1200.00, Equity: $1200.00
+2026-02-01 23:43:31,977 - INFO - Loading ML models...
+2026-02-01 23:43:33,014 - INFO - Using optimal thresholds - BUY: 0.352, SELL: 0.095
+2026-02-01 23:43:33,015 - INFO - State reset for 2026-02-01
+2026-02-01 23:43:33,015 - INFO - Initial balance: $1200.00
+2026-02-01 23:43:33,016 - INFO - Peak balance: $1200.00
+2026-02-01 23:43:33,016 - INFO - ============================================================
+2026-02-01 23:43:33,016 - INFO - BOT RUNNING - Press Ctrl+C to stop
+2026-02-01 23:43:33,016 - INFO - ============================================================
+2026-02-01 23:43:33,410 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:43:33,410 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:43:33,438 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:43:33,438 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:43:33,438 - ERROR - Order failed: 10027 - AutoTrading disabled by client
+2026-02-01 23:44:03,552 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:44:03,553 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:44:03,612 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:44:03,612 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:44:03,612 - ERROR - Order failed: 10027 - AutoTrading disabled by client
+2026-02-01 23:44:33,736 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:44:33,736 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:44:33,758 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:44:33,758 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:44:33,759 - ERROR - Order failed: 10027 - AutoTrading disabled by client
+2026-02-01 23:45:03,844 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:45:03,844 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:45:03,862 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:45:03,863 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:45:03,863 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:45:33,986 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:45:33,986 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:45:34,007 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:45:34,007 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:45:34,007 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:46:04,083 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:46:04,084 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:46:04,100 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:46:04,100 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:46:04,101 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:46:34,215 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:46:34,216 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:46:34,237 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:46:34,237 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:46:34,237 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:47:04,333 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:47:04,333 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:47:04,355 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:47:04,355 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:47:04,355 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:47:33,569 - INFO - Bot stopped by user
+2026-02-01 23:47:33,570 - INFO - Closing all open positions...
+2026-02-01 23:47:33,571 - INFO - Bot shutdown complete
