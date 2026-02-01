@@ -127,3 +127,97 @@
 2026-02-01 23:47:33,569 - INFO - Bot stopped by user
 2026-02-01 23:47:33,570 - INFO - Closing all open positions...
 2026-02-01 23:47:33,571 - INFO - Bot shutdown complete
+2026-02-01 23:51:32,788 - INFO - ============================================================
+2026-02-01 23:51:32,788 - INFO - PRODUCTION-GRADE ML TRADING BOT STARTING
+2026-02-01 23:51:32,789 - INFO - ============================================================
+2026-02-01 23:51:32,789 - INFO - Connecting to MetaTrader 5...
+2026-02-01 23:51:32,799 - INFO - Connected successfully
+2026-02-01 23:51:32,799 - INFO - Account: 52718750, Server: ICMarketsSC-Demo
+2026-02-01 23:51:32,799 - INFO - Balance: $1200.00, Equity: $1200.00
+2026-02-01 23:51:32,799 - INFO - Loading ML models...
+2026-02-01 23:51:33,892 - INFO - Using optimal thresholds - BUY: 0.352, SELL: 0.095
+2026-02-01 23:51:33,892 - INFO - State reset for 2026-02-01
+2026-02-01 23:51:33,892 - INFO - Initial balance: $1200.00
+2026-02-01 23:51:33,892 - INFO - Peak balance: $1200.00
+2026-02-01 23:51:33,892 - INFO - ============================================================
+2026-02-01 23:51:33,892 - INFO - BOT RUNNING - Press Ctrl+C to stop
+2026-02-01 23:51:33,892 - INFO - ============================================================
+2026-02-01 23:51:34,209 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:51:34,209 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:51:34,230 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:51:34,230 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:51:34,231 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:52:04,360 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:52:04,361 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:52:04,388 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:52:04,388 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:52:04,388 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:52:34,487 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:52:34,488 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:52:34,512 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:52:34,512 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:52:34,512 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:53:04,625 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:53:04,625 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:53:04,647 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:53:04,648 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:53:04,648 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:53:34,790 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:53:34,790 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:53:34,809 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:53:34,809 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:53:34,809 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:54:04,938 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:54:04,938 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:54:04,960 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:54:04,960 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:54:04,961 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:54:35,080 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:54:35,080 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:54:35,101 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:54:35,101 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:54:35,102 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:55:05,248 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:55:05,248 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:55:05,275 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:55:05,275 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:55:05,275 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:55:35,397 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:55:35,397 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:55:35,420 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:55:35,421 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:55:35,421 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:56:05,527 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:56:05,527 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:56:05,551 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:56:05,551 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:56:05,551 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:56:35,681 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:56:35,682 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:56:35,702 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:56:35,702 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:56:35,702 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:57:05,818 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:57:05,818 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:57:05,844 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:57:05,844 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:57:05,844 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:57:35,962 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:57:35,962 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:57:35,981 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:57:35,982 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:57:35,982 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:58:06,111 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:58:06,112 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:58:06,132 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:58:06,133 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:58:06,133 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-01 23:58:36,264 - INFO - Prediction - BUY: 0.248, SELL: 0.311
+2026-02-01 23:58:36,264 - INFO - SELL signal detected (confidence: 0.311)
+2026-02-01 23:58:36,286 - INFO - Calculated lot size: 0.01 (Risk: $24.00, SL: 15790 points)
+2026-02-01 23:58:36,286 - INFO - Sending SELL order: 0.01 @ 4885.18000, SL: 5043.07950, TP: 4569.38100
+2026-02-01 23:58:36,286 - ERROR - Order failed: 10030 - Unsupported filling mode
+2026-02-02 00:04:06,288 - INFO - New day detected: 2026-02-02
+2026-02-02 00:04:06,289 - INFO - State reset for 2026-02-02
+2026-02-02 00:04:06,290 - INFO - Initial balance: $1200.00
+2026-02-02 00:04:06,291 - INFO - Peak balance: $1200.00
