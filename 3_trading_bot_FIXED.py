@@ -34,10 +34,15 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('bot.log'),
-        logging.StreamHandler()
+        logging.FileHandler('bot.log', encoding='utf-8'),  # File supports UTF-8
+        logging.StreamHandler()  # Console might not support emojis
     ]
 )
+
+# Remove emoji handler for Windows console compatibility
+for handler in logging.getLogger().handlers:
+    if isinstance(handler, logging.StreamHandler) and not isinstance(handler, logging.FileHandler):
+        handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 
 warnings.filterwarnings('ignore')
 
@@ -45,7 +50,7 @@ warnings.filterwarnings('ignore')
 # KONFIGURASI
 # =====================================
 
-SYMBOL = "XAUUSD"
+SYMBOL = "EURUSD"
 TIMEFRAME = mt5.TIMEFRAME_H1
 MAGIC_NUMBER = 12345
 TIMEZONE = pytz.timezone("Asia/Jakarta")
@@ -54,14 +59,14 @@ TIMEZONE = pytz.timezone("Asia/Jakarta")
 RISK_PERCENT = 2.0
 MIN_LOT = 0.01
 ATR_PERIOD = 14
-RISK_MULTIPLIER = 1.5
-REWARD_MULTIPLIER = 3.0
+RISK_MULTIPLIER = 1.2
+REWARD_MULTIPLIER = 1.5
 LOSS_COOLDOWN_MINUTES = 30
 
 # Filters & Limits
 TRADING_SESSION_START = time(13, 0)
-TRADING_SESSION_END = time(23, 59)
-MIDNIGHT_CLOSE_TIME = time(0, 0)
+TRADING_SESSION_END = time(22, 0)
+# MIDNIGHT_CLOSE: Bot will close all positions between 00:00-00:10 (hardcoded in monitor function)
 
 # CRITICAL: Load optimal thresholds from training
 # Default jika metadata tidak ada
@@ -264,6 +269,48 @@ def log_trade(trade_data: dict):
 # =====================================
 # MT5 HELPERS (ENHANCED)
 # =====================================
+
+def get_filling_mode(symbol):
+    """
+    Get the correct filling mode for the symbol.
+    
+    ERROR 10030 happens when using wrong filling mode.
+    This function auto-detects the correct mode.
+    
+    Parameters:
+        symbol: Trading symbol
+        
+    Returns:
+        int: MT5 filling mode constant
+    """
+    try:
+        symbol_info = mt5.symbol_info(symbol)
+        
+        if symbol_info is None:
+            logging.warning(f"Cannot get symbol info, using default FOK")
+            return mt5.ORDER_FILLING_FOK
+        
+        # Check what filling modes are supported
+        filling_modes = symbol_info.filling_mode
+        
+        # Preference order: IOC > FOK > RETURN
+        # IOC is most flexible for forex
+        
+        if filling_modes & 2:  # IOC supported (bit 1)
+            return mt5.ORDER_FILLING_IOC
+        elif filling_modes & 1:  # FOK supported (bit 0)
+            return mt5.ORDER_FILLING_FOK
+        elif filling_modes & 4:  # RETURN supported (bit 2)
+            return mt5.ORDER_FILLING_RETURN
+        else:
+            # Default fallback
+            logging.warning(f"No standard filling mode detected, using FOK")
+            return mt5.ORDER_FILLING_FOK
+    
+    except Exception as e:
+        logging.error(f"Error getting filling mode: {e}")
+        return mt5.ORDER_FILLING_FOK
+
 
 def connect_mt5():
     """Connect to MT5 with error handling"""
@@ -528,7 +575,7 @@ def place_order(signal, atr):
             'deviation': 20,  # Increased for better fill rate
             'magic': MAGIC_NUMBER,
             'comment': 'ML Bot',
-            'type_filling': sym.filling_mode,
+            'type_filling': get_filling_mode(SYMBOL),  # FIXED: Auto-detect correct mode
         }
         
         # Send order
@@ -541,7 +588,7 @@ def place_order(signal, atr):
             return None
         
         if result.retcode == mt5.TRADE_RETCODE_DONE:
-            logging.info(f"✅ Order executed successfully: Ticket {result.order}")
+            logging.info(f"[SUCCESS] Order executed successfully: Ticket {result.order}")
             
             # Log to journal (initial entry)
             log_trade({
@@ -624,9 +671,14 @@ def monitor_and_close_positions(state):
                 elif pos.tp > 0 and current_price <= pos.tp:
                     exit_reason = "TP"
             
-            # Check midnight close
-            if not exit_reason and now.time() >= MIDNIGHT_CLOSE_TIME:
-                exit_reason = "MIDNIGHT_CLOSE"
+            # CRITICAL FIX: Check midnight close (only close between 00:00 - 00:10)
+            if not exit_reason:
+                current_hour = now.hour
+                current_minute = now.minute
+                
+                # Close only if time is between 00:00 and 00:10
+                if current_hour == 0 and current_minute <= 10:
+                    exit_reason = "MIDNIGHT_CLOSE"
             
             # Close position if needed
             if exit_reason:
@@ -643,13 +695,13 @@ def monitor_and_close_positions(state):
                     'deviation': 20,
                     'magic': MAGIC_NUMBER,
                     'comment': f'Bot close ({exit_reason})',
-                    'type_filling': mt5.symbol_info(SYMBOL).filling_mode
+                    'type_filling': get_filling_mode(pos.symbol)  # FIXED
                 }
                 
                 result = mt5.order_send(close_request)
                 
                 if result and result.retcode == mt5.TRADE_RETCODE_DONE:
-                    logging.info(f"✅ Position {pos.ticket} closed successfully")
+                    logging.info(f"[SUCCESS] Position {pos.ticket} closed successfully")
                     
                     # CRITICAL FIX: Update state with ACTUAL PnL
                     state.update(pnl)
@@ -705,7 +757,7 @@ def main():
     try:
         buy_model = joblib.load(MODEL_BUY_FILE)
         sell_model = joblib.load(MODEL_SELL_FILE)
-        logging.info("✅ Models loaded successfully")
+        logging.info("[SUCCESS] Models loaded successfully")
         
         # Load metadata (includes optimal thresholds)
         if os.path.exists(MODEL_METADATA_FILE):
@@ -808,7 +860,7 @@ def main():
             ticket = place_order(signal, atr)
             
             if ticket:
-                logging.info(f"🎯 New trade opened: {signal} - Ticket {ticket}")
+                logging.info(f"[NEW TRADE] {signal} opened - Ticket {ticket}")
             
             # Wait before next loop
             dt.sleep(30)  # Check every 30 seconds
@@ -842,7 +894,7 @@ def main():
                 'deviation': 20,
                 'magic': MAGIC_NUMBER,
                 'comment': 'Bot shutdown',
-                'type_filling': mt5.symbol_info(SYMBOL).filling_mode
+                'type_filling': get_filling_mode(pos.symbol)  # FIXED
             }
             
             mt5.order_send(close_request)

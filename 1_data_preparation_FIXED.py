@@ -32,14 +32,14 @@ warnings.filterwarnings('ignore')
 # KONFIGURASI
 # =====================================
 
-SYMBOL = "XAUUSD"
+SYMBOL = "EURUSD"
 TIMEFRAME = mt5.TIMEFRAME_H1
 NUM_CANDLES = 10000  # Increased untuk data yang lebih banyak
 
 # Label Configuration (sama dengan yang di bot)
 ATR_PERIOD = 14
-RISK_MULTIPLIER = 1.5   # SL = 1.5 * ATR
-REWARD_MULTIPLIER = 3.0  # TP = 3.0 * ATR (RR = 1:2)
+RISK_MULTIPLIER = 1.2   # SL =  * ATR
+REWARD_MULTIPLIER = 1.5  # TP =  * ATR 
 
 # CRITICAL: Set realistic looking forward window
 # Di live trading, kita tidak tahu apakah trade akan hit TP/SL

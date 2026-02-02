@@ -40,23 +40,23 @@ warnings.filterwarnings('ignore')
 # KONFIGURASI
 # =====================================
 
-DATA_FILE = "XAUUSD_16385_data.csv"  # Output dari fase 1
+DATA_FILE = "EURUSD_16385_data.csv"  # Output dari fase 1
 MODEL_BUY_FILE = "model_buy.pkl"
 MODEL_SELL_FILE = "model_sell.pkl"
 
 # Training configuration
-TRAIN_RATIO = 0.6      # 70% untuk training
+TRAIN_RATIO = 0.7    # 70% untuk training
 VALIDATION_RATIO = 0.15  # 15% untuk validation
 TEST_RATIO = 0.15      # 15% untuk test (out-of-sample)
 
 # Model configuration
-N_ESTIMATORS = 200      # Lebih banyak trees = lebih baik (tapi lebih lambat)
+N_ESTIMATORS = 500     # Lebih banyak trees = lebih baik (tapi lebih lambat)
 MAX_DEPTH = 15          # Prevent overfitting
 MIN_SAMPLES_SPLIT = 50  # Prevent overfitting
 MIN_SAMPLES_LEAF = 20   # Prevent overfitting
 
 # Walk-forward validation
-N_SPLITS = 5  # Jumlah splits untuk walk-forward validation
+N_SPLITS = 8  # Jumlah splits untuk walk-forward validation
 
 
 # =====================================
