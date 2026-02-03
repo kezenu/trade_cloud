@@ -487,3 +487,63 @@
 2026-02-02 22:02:44,753 - INFO - Bot stopped by user
 2026-02-02 22:02:44,754 - INFO - Closing all open positions...
 2026-02-02 22:02:44,755 - INFO - Bot shutdown complete
+2026-02-03 16:19:03,698 - INFO - ============================================================
+2026-02-03 16:19:03,715 - INFO - PRODUCTION-GRADE ML TRADING BOT STARTING
+2026-02-03 16:19:03,715 - INFO - ============================================================
+2026-02-03 16:19:03,715 - INFO - Connecting to MetaTrader 5...
+2026-02-03 16:19:10,425 - INFO - Connected successfully
+2026-02-03 16:19:10,425 - INFO - Account: 52718750, Server: ICMarketsSC-Demo
+2026-02-03 16:19:10,425 - INFO - Balance: $1153.27, Equity: $1153.27
+2026-02-03 16:19:10,426 - INFO - Loading ML models...
+2026-02-03 16:19:21,635 - INFO - [SUCCESS] Models loaded successfully
+2026-02-03 16:19:21,705 - INFO - Using optimal thresholds - BUY: 0.078, SELL: 0.229
+2026-02-03 16:19:21,720 - INFO - State reset for 2026-02-03
+2026-02-03 16:19:21,738 - INFO - Initial balance: $1153.27
+2026-02-03 16:19:21,753 - INFO - Peak balance: $1153.27
+2026-02-03 16:19:21,759 - INFO - ============================================================
+2026-02-03 16:19:21,762 - INFO - BOT RUNNING - Press Ctrl+C to stop
+2026-02-03 16:19:21,766 - INFO - ============================================================
+2026-02-03 16:19:29,143 - INFO - Prediction - BUY: 0.386, SELL: 0.550
+2026-02-03 16:19:29,144 - INFO - BUY signal detected (confidence: 0.386)
+2026-02-03 16:19:29,176 - WARNING - Insufficient margin. Required: $13000.00, Available: $1153.27
+2026-02-03 16:19:29,177 - INFO - Sending BUY order: 0.01 @ 1.18123, SL: 1.17950, TP: 1.18339
+2026-02-03 16:19:29,800 - INFO - [SUCCESS] Order executed successfully: Ticket 1449802933
+2026-02-03 16:19:29,890 - INFO - Trade logged: 1449802933
+2026-02-03 16:19:29,890 - INFO - [NEW TRADE] BUY opened - Ticket 1449802933
+2026-02-03 16:39:59,896 - INFO - 1 position(s) already open
+2026-02-03 17:00:00,092 - INFO - Prediction - BUY: 0.508, SELL: 0.460
+2026-02-03 17:00:00,092 - INFO - BUY signal detected (confidence: 0.508)
+2026-02-03 17:00:00,118 - WARNING - Insufficient margin. Required: $12000.00, Available: $1151.50
+2026-02-03 17:00:00,119 - INFO - Sending BUY order: 0.01 @ 1.17923, SL: 1.17739, TP: 1.18153
+2026-02-03 17:00:01,313 - INFO - [SUCCESS] Order executed successfully: Ticket 1449891487
+2026-02-03 17:00:01,316 - INFO - Trade logged: 1449891487
+2026-02-03 17:00:01,317 - INFO - [NEW TRADE] BUY opened - Ticket 1449891487
+2026-02-03 17:05:31,319 - INFO - 1 position(s) already open
+2026-02-03 17:29:08,301 - INFO - Bot stopped by user
+2026-02-03 17:29:08,303 - INFO - Closing all open positions...
+2026-02-03 17:29:09,288 - INFO - Bot shutdown complete
+2026-02-03 17:33:27,608 - INFO - ============================================================
+2026-02-03 17:33:27,608 - INFO - PRODUCTION-GRADE ML TRADING BOT STARTING
+2026-02-03 17:33:27,609 - INFO - ============================================================
+2026-02-03 17:33:27,609 - INFO - Connecting to MetaTrader 5...
+2026-02-03 17:33:27,621 - INFO - Connected successfully
+2026-02-03 17:33:27,621 - INFO - Account: 52718750, Server: ICMarketsSC-Demo
+2026-02-03 17:33:27,622 - INFO - Balance: $1151.79, Equity: $1151.79
+2026-02-03 17:33:27,622 - INFO - Loading ML models...
+2026-02-03 17:33:28,694 - INFO - [SUCCESS] Models loaded successfully
+2026-02-03 17:33:28,709 - INFO - Using optimal thresholds - BUY: 0.215, SELL: 0.160
+2026-02-03 17:33:28,710 - INFO - State reset for 2026-02-03
+2026-02-03 17:33:28,710 - INFO - Initial balance: $1151.79
+2026-02-03 17:33:28,711 - INFO - Peak balance: $1151.79
+2026-02-03 17:33:28,711 - INFO - ============================================================
+2026-02-03 17:33:28,712 - INFO - BOT RUNNING - Press Ctrl+C to stop
+2026-02-03 17:33:28,712 - INFO - ============================================================
+2026-02-03 17:33:29,020 - INFO - Prediction - BUY: 0.344, SELL: 0.479
+2026-02-03 17:33:29,021 - INFO - BUY signal detected (confidence: 0.344)
+2026-02-03 17:33:29,038 - WARNING - Insufficient margin. Required: $13000.00, Available: $1151.79
+2026-02-03 17:33:29,038 - INFO - Sending BUY order: 0.01 @ 1.17919, SL: 1.17738, TP: 1.18145
+2026-02-03 17:33:29,559 - INFO - [SUCCESS] Order executed successfully: Ticket 1449951398
+2026-02-03 17:33:29,601 - INFO - Trade logged: 1449951398
+2026-02-03 17:33:29,601 - INFO - [NEW TRADE] BUY opened - Ticket 1449951398
+2026-02-03 17:53:59,609 - INFO - 1 position(s) already open
+2026-02-03 18:23:59,617 - INFO - 1 position(s) already open

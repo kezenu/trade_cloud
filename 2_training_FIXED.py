@@ -40,7 +40,7 @@ warnings.filterwarnings('ignore')
 # KONFIGURASI
 # =====================================
 
-DATA_FILE = "EURUSD_16385_data.csv"  # Output dari fase 1
+DATA_FILE = "EURUSD_15_data.csv"  # Output dari fase 1
 MODEL_BUY_FILE = "model_buy.pkl"
 MODEL_SELL_FILE = "model_sell.pkl"
 

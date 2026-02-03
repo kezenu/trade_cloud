@@ -33,7 +33,7 @@ warnings.filterwarnings('ignore')
 # =====================================
 
 SYMBOL = "EURUSD"
-TIMEFRAME = mt5.TIMEFRAME_H1
+TIMEFRAME = mt5.TIMEFRAME_M15
 NUM_CANDLES = 10000  # Increased untuk data yang lebih banyak
 
 # Label Configuration (sama dengan yang di bot)
