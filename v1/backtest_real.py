@@ -9,9 +9,9 @@ import MetaTrader5 as mt5 # Pastikan MT5 diimpor di awal
 warnings.filterwarnings('ignore')
 
 # --- KONFIGURASI (HARUS SAMA DENGAN BOT UTAMA) ---
-DATA_FILE = "EURUSD_16385_data.csv"
-MODEL_BUY_FILE = "model_buy.pkl"
-MODEL_SELL_FILE = "model_sell.pkl"
+DATA_FILE = "v1\\EURUSD_15_data.csv"
+MODEL_BUY_FILE = "v1\\model_buy.pkl"
+MODEL_SELL_FILE = "v1\\model_sell.pkl"
 SYMBOL = "EURUSD" # Tambahkan konstanta simbol
 
 # Manajemen Risiko
